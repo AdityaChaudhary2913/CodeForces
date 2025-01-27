@@ -8,6 +8,6 @@ for _ in range(t):
             print("3", end="")
         print("66")
     else:
-        for i in range(n-5):
+        for i in range(n-4):
             print("3", end="")
-        print("36366")
+        print("6366")
