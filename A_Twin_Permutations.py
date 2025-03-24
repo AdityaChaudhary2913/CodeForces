@@ -11,17 +11,10 @@ for _ in range(t):
     index += 1
     a = list(map(int, data[index:index+n]))
     index += n
-    
-    negs = a.count(-1)
-    poss = n - negs
-    
-    ops = 0
-    
-    while poss<negs or negs%2:
-        ops += 1
-        poss += 1
-        negs -= 1
-    
-    results.append(str(ops))
+    b = []
+    maxi = max(a) + 1
+    for i in range(n):
+        b.append(maxi-a[i])
+    results.append(" ".join(map(str, b)))
 
 sys.stdout.write("\n".join(results))
