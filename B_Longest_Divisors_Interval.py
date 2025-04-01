@@ -9,7 +9,10 @@ results = []
 for _ in range(t):
     n = int(data[index])
     index += 1
-    a = list(map(int, data[index:index+n]))
-    index += n
+    
+    for i in range(1, 101):
+        if n%i == 0 and n%(i+1) != 0:
+            results.append(str(i))
+            break
 
 sys.stdout.write("\n".join(results))
