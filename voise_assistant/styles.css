@@ -1,0 +1,38 @@
+
+#cf-voice-assistant-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f5f5f5;
+    padding: 8px 12px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+    width: fit-content;
+}
+
+#cf-voice-assistant-controls button {
+    background: #e0e0e0;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+#cf-voice-assistant-controls button:disabled {
+    color: #aaa;
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+}
+
+#cf-voice-assistant-controls button:hover:not(:disabled) {
+    background-color: #d0d0d0;
+}

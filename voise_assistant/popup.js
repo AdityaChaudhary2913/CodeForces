@@ -1,0 +1,1 @@
+// This script will handle the popup's functionality.

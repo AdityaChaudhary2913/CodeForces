@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Codeforces Voice Assistant",
+  "version": "1.0",
+  "description": "A voice assistant for Codeforces that reads questions aloud.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tts"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://codeforces.com/problemset/problem/*"],
+      "css": ["styles.css"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
